@@ -20,9 +20,8 @@ class Blog extends Component {
                 const posts = res.data.slice(0,4).map(
                     post=>{return{...post,author:'Max'}}
                 )
-                this.setState({posts:posts})
-                console.log(this.state.posts)
-            })
+                this.setState({posts:posts});
+            });
 
     };
 
